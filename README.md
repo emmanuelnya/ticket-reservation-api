@@ -2,7 +2,7 @@
 
 **Studente:** Nya Emmanuel
 **Matricola:** 7146768
-**Corso:** PPM 2026
+**Corso:**PPM 2026
 
 ## Tipo di progetto
 
@@ -106,7 +106,7 @@ pip install -r requirements.txt
 #    
 python manage.py migrate
 
-# 5.Ripopola i dati demo da zero
+# 5. Ripopola i dati demo da zero
 python manage.py seed_demo_data
 
 # 6. Avvia il server di sviluppo
@@ -132,8 +132,7 @@ Il file **`db.sqlite3`** incluso nel repository contiene già:
 
 ## Link di deployment
 
-> **Da completare dopo il deploy:**
-> `https://ticket-reservation-api-u1oo.onrender.com`
+> `https://ticket-reservation-api-u1oo.onrender.com/`
 
 ## Documentazione degli endpoint
 
