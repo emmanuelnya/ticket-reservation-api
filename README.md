@@ -132,22 +132,7 @@ Il file **`db.sqlite3`** incluso nel repository contiene già:
 
 ## Link di deployment
 
-> **Da completare dopo il deploy:**
-> `https://NOME-PROGETTO.onrender.com`
-
-### Come effettuare il deploy su Render (gratuito)
-
-1. Crea un account su [render.com](https://render.com) e collega il
-   repository GitHub.
-2. Crea un nuovo **Web Service**, selezionando il repository.
-3. Imposta:
-   - **Build Command:** `pip install -r requirements.txt && python manage.py collectstatic --noinput`
-   - **Start Command:** `gunicorn ticketapi.wsgi:application`
-4. Aggiungi le variabili d'ambiente:
-   - `SECRET_KEY` → una stringa segreta a piacere
-   - `DEBUG` → `False`
-   - `ALLOWED_HOSTS` → `*` (o il domino fornito da Render)
-5. Esegui il deploy e copia l'URL fornito da Render nel campo sopra.
+> `https://ticket-reservation-api-u1oo.onrender.com/`
 
 ## Documentazione degli endpoint
 
