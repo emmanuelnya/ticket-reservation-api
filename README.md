@@ -2,7 +2,7 @@
 
 **Studente:** Nya Emmanuel
 **Matricola:** 7146768
-**Corso:** Back-end PPM 2026
+**Corso:**PPM 2026
 
 ## Tipo di progetto
 
