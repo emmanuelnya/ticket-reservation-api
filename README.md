@@ -102,11 +102,11 @@ source venv/bin/activate        # Windows: venv\Scripts\activate
 # 3. Installa le dipendenze
 pip install -r requirements.txt
 
-# 4. Applica le migrazioni (il database demo è già incluso,
-#    ma questo comando verifica la coerenza dello schema)
+# 4. Applica le migrazioni
+#    
 python manage.py migrate
 
-# 5. (Opzionale) Ripopola i dati demo da zero
+# 5. Ripopola i dati demo da zero
 python manage.py seed_demo_data
 
 # 6. Avvia il server di sviluppo
@@ -148,12 +148,6 @@ Il file **`db.sqlite3`** incluso nel repository contiene già:
    - `DEBUG` → `False`
    - `ALLOWED_HOSTS` → `*` (o il domino fornito da Render)
 5. Esegui il deploy e copia l'URL fornito da Render nel campo sopra.
-
-> Nota: poiché il progetto usa SQLite per finalità dimostrative, su
-> Render il database si resetta a ogni nuovo deploy/restart del
-> servizio. Per la valutazione, il file `db.sqlite3` incluso nel
-> repository garantisce comunque dati demo consultabili in locale e,
-> dopo ogni avvio, lo storage temporaneo del servizio.
 
 ## Documentazione degli endpoint
 
