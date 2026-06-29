@@ -2,7 +2,7 @@
 
 **Studente:** Nya Emmanuel
 **Matricola:** 7146768
-**Corso:** Back-end PPM 2026
+**Corso:** PPM 2026
 
 ## Tipo di progetto
 
@@ -102,11 +102,11 @@ source venv/bin/activate        # Windows: venv\Scripts\activate
 # 3. Installa le dipendenze
 pip install -r requirements.txt
 
-# 4. Applica le migrazioni (il database demo è già incluso,
-#    ma questo comando verifica la coerenza dello schema)
+# 4. Applica le migrazioni
+#    
 python manage.py migrate
 
-# 5. (Opzionale) Ripopola i dati demo da zero
+# 5.Ripopola i dati demo da zero
 python manage.py seed_demo_data
 
 # 6. Avvia il server di sviluppo
@@ -133,27 +133,7 @@ Il file **`db.sqlite3`** incluso nel repository contiene già:
 ## Link di deployment
 
 > **Da completare dopo il deploy:**
-> `https://NOME-PROGETTO.onrender.com`
-
-### Come effettuare il deploy su Render (gratuito)
-
-1. Crea un account su [render.com](https://render.com) e collega il
-   repository GitHub.
-2. Crea un nuovo **Web Service**, selezionando il repository.
-3. Imposta:
-   - **Build Command:** `pip install -r requirements.txt && python manage.py collectstatic --noinput`
-   - **Start Command:** `gunicorn ticketapi.wsgi:application`
-4. Aggiungi le variabili d'ambiente:
-   - `SECRET_KEY` → una stringa segreta a piacere
-   - `DEBUG` → `False`
-   - `ALLOWED_HOSTS` → `*` (o il domino fornito da Render)
-5. Esegui il deploy e copia l'URL fornito da Render nel campo sopra.
-
-> Nota: poiché il progetto usa SQLite per finalità dimostrative, su
-> Render il database si resetta a ogni nuovo deploy/restart del
-> servizio. Per la valutazione, il file `db.sqlite3` incluso nel
-> repository garantisce comunque dati demo consultabili in locale e,
-> dopo ogni avvio, lo storage temporaneo del servizio.
+> `https://ticket-reservation-api-u1oo.onrender.com`
 
 ## Documentazione degli endpoint
 
